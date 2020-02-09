@@ -1,8 +1,18 @@
-directory.tmp: /applis/tmp
+directory.tmp: CHANGEIT
 
 
 logging:
   level:
-    root: ERROR
-    org.springframework.web: ERROR
-    com.cailliaud.ansible: DEBUG
+    root: INFO
+    org.springframework.web: INFO
+    com.cailliaud.ansible: INFO
+
+server:
+   port: 8443
+   ssl:
+      key-store: CHANGEIT
+      key-store-password: CHANGEIT
+      keyStoreType: PKCS12
+      keyAlias: CA-ROOT
+      protocol: TLS
+      enabled-protocols: TLSv1.2+TLSv1.3

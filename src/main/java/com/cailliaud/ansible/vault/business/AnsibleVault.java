@@ -66,7 +66,7 @@ public class AnsibleVault {
       int exitCode = process.waitFor();
       assert exitCode == 0;
     } catch (InterruptedException | IOException e) {
-      log.error("Ansible vault command failed", e);
+      log.debug("Ansible vault command failed",e);
       throw new VaultServiceException("Ansible vault command failed");
     }
   }
