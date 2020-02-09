@@ -1,0 +1,8 @@
+directory.tmp: /applis/tmp
+
+
+logging:
+  level:
+    root: ERROR
+    org.springframework.web: ERROR
+    com.cailliaud.ansible: DEBUG

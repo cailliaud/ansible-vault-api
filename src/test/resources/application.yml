@@ -1,0 +1,8 @@
+directory.tmp: E:/tmp
+
+
+logging:
+  level:
+    root: ERROR
+    org.springframework.web: WARN
+    com.cailliaud.ansible: DEBUG
